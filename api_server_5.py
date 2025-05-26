@@ -1,6 +1,7 @@
 import os
 BASE_DIR = os.path.dirname(__file__)
 import joblib
+import json
 import pandas as pd
 from flask import Flask, jsonify, request
 from peewee import (
