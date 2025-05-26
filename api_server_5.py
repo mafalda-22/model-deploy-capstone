@@ -1,4 +1,5 @@
 import os
+BASE_DIR = os.path.dirname(__file__)
 import joblib
 import pandas as pd
 from flask import Flask, jsonify, request
