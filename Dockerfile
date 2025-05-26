@@ -1,6 +1,13 @@
 # Use a slim base image
 FROM python:3.12-slim
 
+# Install system dependencies
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends \
+      git \
+      libgomp1 \
+ && rm -rf /var/lib/apt/lists/*
+
 # Create and switch to a non-root user for security
 RUN useradd --create-home appuser
 WORKDIR /home/appuser
