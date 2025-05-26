@@ -2,6 +2,8 @@ pandas==2.2.2              # base
 matplotlib==3.9.0          # base
 scikit-learn==1.5.0        # base
 category-encoders==2.6.3   # base
+joblib==1.3.2
+lightgbm==4.0.0
 
 Flask==3.1.0               # S06
 peewee==3.17.9             # S06
